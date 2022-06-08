@@ -11,21 +11,31 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <div class="logo">Studio Furniture</div>
-        <!--<a href=""
-          ><img src="#" alt="Логотип Studio Furniture" class="header__logo"
-        /></a>-->
+        <!--<div class="logo">Studio Furniture</div>-->
+        <a href="index.html">
+          <img
+            src="assets/img/logo.png"
+            alt="Логотип Studio Furniture"
+            class="header__logo"
+          />
+        </a>
         <nav class="header__link">
           <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link">О Нас</a></li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Наши Проекты</a>
+              <div data-about class="menu__link about">О Нас</div>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Где купить</a>
+              <a href="https://studiof.by/projects" class="menu__link"
+                >Наши Проекты</a
+              >
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
+              <div data-order class="menu__link order">Как Заказать</div>
+            </li>
+            <li class="menu__item">
+              <a href="contact.html" class="menu__link" target="_blank"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
@@ -38,10 +48,10 @@
     </header>
     <main class="main">
       <div class="main__produts">
-        <img src="assets/img/furniture-slider-1.jpg" alt="furniture-slider" />
+        <img src="assets/img/rotang.jpg" alt="furniture-slider" />
         <div class="produts__container">
-          <div class="produts__subtitle">Новая коллекция</div>
-          <div class="produts__title">Самые продаваемые изделия</div>
+          <div class="produts__subtitle">Дизайнерская мягкая мебель</div>
+          <div class="produts__title">Studio Furniture</div>
           <div class="produts__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa
             cumque ipsa porro adipisci officiis eligendi ad a, at minus
@@ -53,11 +63,16 @@
       <div class="main__design">
         <div class="design__container">
           <div class="design__product">
-            <img src="assets/img/furniture-img-1.jpg" alt="armchair" />
-            <h3>Blue armchair</h3>
+            <a
+              href="https://studiof.by/home/popular/cordial-chair"
+              class="item__product"
+            >
+              <img src="assets/img/cordial-chair.jpg" alt="armchair" />
+              <h3>Cordial Chair</h3>
+            </a>
           </div>
           <div class="design__content">
-            <img src="assets/img/h-4-img-2.jpg" alt="furniture-slider" />
+            <img src="assets/img/birga.jpg" alt="furniture-slider" />
             <div class="design__title">Современный дизайн</div>
           </div>
         </div>
@@ -65,50 +80,85 @@
       <div class="main__design">
         <div class="design__container">
           <div class="design__content">
-            <img src="assets/img/h-4-img-3.jpg" alt="furniture-slider" />
-            <div class="design__title-right">Нестандартные <br />решения</div>
+            <img
+              src="assets/img/furniture-production.jpg"
+              alt="furniture-slider"
+            />
+            <div class="design__title-right">
+              Проектирование и <br />производство
+            </div>
           </div>
           <div class="design__product">
-            <img src="assets/img/furniture-img-2.jpg" alt="" />
-            <h3>Wing armchair</h3>
+            <a
+              href="https://studiof.by/gallery/gallery/armchairs/alex"
+              class="item__product"
+            >
+              <img src="assets/img/alex.jpg" alt="" />
+              <h3>Alex Сhair</h3>
+            </a>
           </div>
         </div>
       </div>
       <div class="main__top">
         <div class="top__container">
-          <img src="assets/img/h-prod-1.jpg" alt="" />
-          <img src="assets/img/h-prod-2.jpg" alt="" />
-          <img src="assets/img/h-prod-3.jpg" alt="" />
+          <a href="https://studiof.by/sofas" class="top__product">
+            <img src="assets/img/Erdnuss.jpg" alt="studio furniture sofas" />
+            <div class="title__product"><h3>Диваны</h3></div>
+          </a>
+          <a href="https://studiof.by/armchairs" class="top__product">
+            <img src="assets/img/archi.jpg" alt="studio furniture armchairs" />
+            <div class="title__product"><h3>Кресла</h3></div>
+          </a>
+          <a href="https://studiof.by/beds" class="top__product">
+            <img src="assets/img/bed.jpg" alt="studio furniture beds" />
+            <div class="title__product"><h3>Кровати</h3></div>
+          </a>
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="footer__logo">
         <div class="logo__title">Studio Furniture</div>
-        <div class="logo__subtitle">Производство мягкой мебели под заказ</div>
+        <div class="logo__subtitle">Дизайнерская мягкая мебель под заказ</div>
       </div>
       <div class="footer__info">
         <div class="location">
           <img src="assets/icons/location_icon.svg" alt="" />
           <p>Минск, ул. Макаёнка, 23а</p>
         </div>
-        <div class="time-work">
-          <img src="assets/icons/clock-icon.svg" alt="" />
-          <p>Пн-пт 9.00 - 18.00</p>
+        <div class="phone-work">
+          <img src="assets/icons/phone_icon_white.svg" alt="" />
+          <a href="tel:+79362558905">+7 936 255 89 05</a>
+        </div>
+        <div class="phone-work">
+          <img src="assets/icons/phone_icon_white.svg" alt="" />
+          <a href="tel:+375445540106">+375 44 554 01 06</a>
         </div>
       </div>
       <div class="social-media">
-        <a href="#"
-          ><img src="assets/icons/instagram_icon_white.svg" alt="instagram"
+        <a href="https://www.instagram.com/studiofurnitureminsk/"
+          ><img
+            src="assets/icons/instagram_icon_white.svg"
+            title="instagram Studio Furniture"
+            alt="instagram"
         /></a>
-        <a href="#"
-          ><img src="assets/icons/telegram_icon_white.svg" alt="telegram"
+        <a href="https://telegram.me/studiofurnitureminsk/"
+          ><img
+            src="assets/icons/telegram_icon_white.svg"
+            title="telegram Studio Furniture"
+            alt="telegram"
         /></a>
-        <a href="#"
-          ><img src="assets/icons/viber_icon-white.svg" alt="viber"
+        <a href="viber://chat?number=%2B79362558905"
+          ><img
+            src="assets/icons/viber_icon-white.svg"
+            title="viber Studio Furniture"
+            alt="viber"
         /></a>
-        <a href="#"
-          ><img src="assets/icons/whatsapp_icon-white.svg" alt="whatsapp"
+        <a href="https://wa.me/79362558905"
+          ><img
+            src="assets/icons/whatsapp_icon-white.svg"
+            title="whatsapp Studio Furniture"
+            alt="whatsapp"
         /></a>
       </div>
     </footer>
@@ -116,18 +166,132 @@
       <div class="nav__bar">
         <ul class="nav__list">
           <li class="nav__list item">
-            <a href="" class="nav__link">О Нас</a>
+            <div data-about class="menu__link about nav__link">О Нас</div>
           </li>
           <li class="nav__list item">
-            <a href="" class="nav__link">Наши Проекты</a>
+            <a href="https://studiof.by/projects" class="nav__link"
+              >Наши Проекты</a
+            >
           </li>
           <li class="nav__list item">
-            <a href="" class="nav__link">Где купить</a>
+            <div data-order class="menu__link order nav__link">
+              Как Заказать
+            </div>
           </li>
           <li class="nav__list item">
-            <a href="" class="nav__link">Контакты</a>
+            <a href="contact.html" class="nav__link">Контакты</a>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="modal__about">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div data-close="" class="modal-close">×</div>
+
+          <div class="modal__info">
+            <div class="about__title">Коротко о проекте Studio Furniture</div>
+            <img
+              src="assets/img/about-img.jpg"
+              alt="about us"
+              class="about__img"
+            />
+            <div class="about__text">
+              <p>
+                <span>Проект Studio Furniture</span> - новый и достаточно
+                молодой проект компании Лимбао. Мы открыли второе направление
+                развития компании в 2015 году. К этому времени у нас уже имелся
+                большой опыт работы в области ремонта мягкой мебели. Осуществляя
+                ремонты старой мебели стало очевидно, что в абсолютном
+                большинстве, мебель в наших квартирах скучна и однообразна. Эхо
+                советского союза до настоящего времени дает знать о себе даже в
+                той мебели, которую предлагают гиганты отечественного мебельного
+                рынка.
+              </p>
+              <p>
+                Своим проектом Studio Furniture мы хотим привнести новые
+                современные тенденции в области проектирования, дизайна и
+                производства мягкой мебели. Мы хотим задать новый мебельный
+                тренд в отечественной мебельной отрасли. Нам не интересны
+                скучные, стандартные шаблонные решения. Мебель, которую мы
+                производим для наших заказчиков, обязательно должна подчиняться
+                трем составляющим, которые мы возвели в основу нашей философии:
+              </p>
+              <p>
+                <span>дизайн</span> - мебель должна радовать своим внешним
+                видом, лаконичность форм, современные фактуры, уместность и
+                гармоничность в интерьере.
+              </p>
+              <p>
+                <span>практичность</span> - любая мебель должна быть практична и
+                функциональна, мы не жертвуем практичностью ради дизайна и
+                готовы пересматривать по несколько раз всю концепцию изделия,
+                чтобы допилить его функционал.
+              </p>
+              <p>
+                <span>простота</span> - "все гениальное просто", никаких сложных
+                решений и механизмов, снижающих долговечность изделия, никаких
+                высокотехнологичных станков, заточенных только под одну
+                операцию. Все что мы пытаемся делать - красиво в своей простоте.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal__order">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div data-close="" class="modal-close">×</div>
+
+          <div class="modal__info">
+            <div class="about__title">Как сделать заказ</div>
+            <img
+              src="assets/img/about-img.jpg"
+              alt="about us"
+              class="about__img"
+            />
+            <div class="about__text">
+              <p>
+                <span>Проект Studio Furniture</span> - новый и достаточно
+                молодой проект компании Лимбао. Мы открыли второе направление
+                развития компании в 2015 году. К этому времени у нас уже имелся
+                большой опыт работы в области ремонта мягкой мебели. Осуществляя
+                ремонты старой мебели стало очевидно, что в абсолютном
+                большинстве, мебель в наших квартирах скучна и однообразна. Эхо
+                советского союза до настоящего времени дает знать о себе даже в
+                той мебели, которую предлагают гиганты отечественного мебельного
+                рынка.
+              </p>
+              <p>
+                Своим проектом Studio Furniture мы хотим привнести новые
+                современные тенденции в области проектирования, дизайна и
+                производства мягкой мебели. Мы хотим задать новый мебельный
+                тренд в отечественной мебельной отрасли. Нам не интересны
+                скучные, стандартные шаблонные решения. Мебель, которую мы
+                производим для наших заказчиков, обязательно должна подчиняться
+                трем составляющим, которые мы возвели в основу нашей философии:
+              </p>
+              <p>
+                <span>дизайн</span> - мебель должна радовать своим внешним
+                видом, лаконичность форм, современные фактуры, уместность и
+                гармоничность в интерьере.
+              </p>
+              <p>
+                <span>практичность</span> - любая мебель должна быть практична и
+                функциональна, мы не жертвуем практичностью ради дизайна и
+                готовы пересматривать по несколько раз всю концепцию изделия,
+                чтобы допилить его функционал.
+              </p>
+              <p>
+                <span>простота</span> - "все гениальное просто", никаких сложных
+                решений и механизмов, снижающих долговечность изделия, никаких
+                высокотехнологичных станков, заточенных только под одну
+                операцию. Все что мы пытаемся делать - красиво в своей простоте.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/script.js"></script>
